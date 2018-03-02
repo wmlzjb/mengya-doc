@@ -1,5 +1,5 @@
 {
-  "name": "myProject",
+  "name": "mengya-doc",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,13 +8,18 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.13"
+    "vue": "^2.5.13",
+    "element-ui": "2.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-alpha.10",
     "@vue/cli-plugin-eslint": "^3.0.0-alpha.10",
     "@vue/cli-service": "^3.0.0-alpha.10",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "sass-loader": "6.0.6",
+    "node-sass": "4.7.2",
+    "vue-router": "3.0.1",
+    "vue-markdown-loader": "1"
   },
   "babel": {
     "presets": [
