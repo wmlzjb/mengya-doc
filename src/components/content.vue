@@ -194,11 +194,20 @@ export default {
           name: "后端",
           groups: [
             {
-              groupName: "Basic",
+              groupName: "1",
               list: [
-                { title: "Layout 布局", path: "" },
-                { title: "Container 布局容器", path: "" },
-                { title: "Color 色彩", path: "" }
+                { title: "框架", path: "/project-framework" },
+                //{ title: "依赖关系", path: "/backstage/project-dependence" },
+                { title: "关键技术点", path: "/important-technical-point" },
+              ]
+            },
+            {
+              groupName: "2",
+              list: [
+                { title: "实体对象", path: "/sample-entity" },
+                { title: "数据传输对象", path: "/sample-view-model" },
+                { title: "业务服务", path: "/sample-data-service" },
+                { title: "API", path: "/sample-rest-api" },
               ]
             }
           ]

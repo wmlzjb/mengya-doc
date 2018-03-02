@@ -25,6 +25,18 @@ const routes = [
                 name: 'component-quickstart',
                 // component: r => require.ensure([], () => r(require('./docs/quickstart.md')))
                 component: () => import('./docs/quickstart.md')
+            },
+            
+            {
+                path: 'project-framework',
+                meta: {
+                    title: '项目结构',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'project-framework',
+                // component: r => require.ensure([], () => r(require('./docs/quickstart.md')))
+                component: () => import('./docs/backstage/project-framework.md')
             }
         ]
     },
