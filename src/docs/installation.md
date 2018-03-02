@@ -1,44 +1,30 @@
+## 安装
 
-## Alert 警告21
+### npm 安装
 
-用于页面中展示重要的提示信息。
+推荐使用 npm 的方式安装，它能更好地和 [webpack](https://webpack.js.org/) 打包工具配合使用。
 
-### 基本用法
+```shell
+npm i element-ui -S
+```
 
-页面中的非浮层元素，不会自动消失。
+### CDN
 
-### 自定义关闭按钮
+目前可以通过 [unpkg.com/element-ui](https://unpkg.com/element-ui/) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 
-自定义关闭按钮为文字或其他符号。
+```html
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+```
 
-### 带有 icon
+:::tip
+我们建议使用 CDN 引入 Element 的用户在链接地址上锁定版本，以免将来 Element 升级时受到非兼容性更新的影响。锁定版本的方法请查看 [unpkg.com](https://unpkg.com)。
+:::
 
-表示某种状态时提升可读性。
+### Hello world
 
-### 文字居中
+通过 CDN 的方式我们可以很容易地使用 Element 写出一个 Hello world 页面。[在线演示](https://jsfiddle.net/hzfpyvg6/14/)
 
-使用 `center` 属性让文字水平居中。
-
-### 带有辅助性文字介绍
-
-包含标题和内容，解释更详细的警告。
-
-### 带有 icon 和辅助性文字介绍
-
-### Attributes
-
-| 参数      | 说明          | 类型      | 可选值                           | 默认值  |
-|---------- |-------------- |---------- |--------------------------------  |-------- |
-| **title** | 标题，**必选参数** | string | — | — |
-| type | 主题 | string | success/warning/info/error | info |
-| description | 辅助性文字。也可通过默认 slot 传入 | string | — | — |
-| closable | 是否可关闭 | boolean | — | true |
-| center | 文字是否居中 | boolean | — | true |
-| close-text | 关闭按钮自定义文本 | string | — | — |
-| show-icon | 是否显示图标 | boolean | — | false |
-
-### Events
-
-| 事件名称 | 说明 | 回调参数 |
-|---------- |-------- |---------- |
-| close | 关闭alert时触发的事件 | — |
+如果是通过 npm 安装，并希望配合 webpack 使用，请阅读下一节：快速上手。
