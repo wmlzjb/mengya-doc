@@ -185,7 +185,16 @@ export default {
               groupName: "Basic",
               list: [
                 { title: "安装", path: "/installation" },
-                { title: "快速上手", path: "/quickstart" }
+                { title: "快速上手", path: "/quickstart" },
+                { title: "目录结构", path: "/structure" }
+              ]
+            },
+            {
+              groupName: "Development",
+              list: [
+                { title: "登录", path: "/login" },
+                { title: "拦截", path: "/interceptor" },
+                { title: "权限", path: "/role" }
               ]
             }
           ]
@@ -207,13 +216,13 @@ export default {
     };
   },
   watch: {
-    "$route.path"() {
-      // 触发伪滚动条更新
-      this.componentScrollBox.scrollTop = 0;
-      this.$nextTick(() => {
-        this.componentScrollBar.update();
-      });
-    }
+    // "$route.path"() {
+    //   // 触发伪滚动条更新
+    //   this.componentScrollBox.scrollTop = 0;
+    //   this.$nextTick(() => {
+    //     this.componentScrollBar.update();
+    //   });
+    // }
   },
   methods: {
     renderAnchorHref() {
