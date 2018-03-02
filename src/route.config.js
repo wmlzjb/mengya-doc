@@ -23,7 +23,6 @@ const routes = [
                     lang: 'zh-CN'
                 },
                 name: 'component-quickstart',
-                // component: r => require.ensure([], () => r(require('./docs/quickstart.md')))
                 component: () => import('./docs/quickstart.md')
             },
             
@@ -37,6 +36,49 @@ const routes = [
                 name: 'project-framework',
                 // component: r => require.ensure([], () => r(require('./docs/quickstart.md')))
                 component: () => import('./docs/backstage/project-framework.md')
+            }
+            ,
+            {
+                path: 'structure',
+                meta: {
+                    title: '目录结构',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'component-structure',
+                component: () => import('./docs/structure.md')
+            },
+            {
+                path: 'login',
+                meta: {
+                    title: '登录',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'component-login',
+                component: () => import('./docs/login.md')
+            }
+            ,
+            {
+                path: 'interceptor',
+                meta: {
+                    title: '拦截',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'component-interceptor',
+                component: () => import('./docs/interceptor.md')
+            }
+            ,
+            {
+                path: 'role',
+                meta: {
+                    title: '权限',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'component-role',
+                component: () => import('./docs/role.md')
             }
         ]
     },
