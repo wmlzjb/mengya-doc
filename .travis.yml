@@ -21,3 +21,6 @@ before_install:
 env:
   global:
     - GH_REF: github.com/wmlzjb/mengya-doc.git
+branches:
+  only:
+    - master
