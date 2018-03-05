@@ -6,9 +6,18 @@ install:
 script:
 - npm run-script build
 after_success:
-- git subtree push --prefix=dist origin stage
+- cd dist
+- git init
+- git config user.name "wmlzjb"
+- git config user.email "wmlzjb@aliyun.com"
+- git add --all .
+- git commit --message "Automatically update from travis-ci"
+- git push --quiet --force  "https://${GH_TOKEN}@${GH_REF}" stage:stage
 before_install:
 - openssl aes-256-cbc -K $encrypted_5041a62828b6_key -iv $encrypted_5041a62828b6_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - echo -e "Host 139.59.124.75\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+env:
+  global:
+    - GH_REF: github.com/wmlzjb/mengya-doc.git
