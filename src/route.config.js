@@ -24,8 +24,7 @@ const routes = [
                 },
                 name: 'component-quickstart',
                 component: () => import('./docs/quickstart.md')
-            }
-            ,
+            },
             {
                 path: 'structure',
                 meta: {
@@ -68,6 +67,106 @@ const routes = [
                 name: 'component-role',
                 component: () => import('./docs/role.md')
             }
+            ,
+            {
+                path: 'project-framework',
+                meta: {
+                    title: '结构',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'project-framework',
+                component: () => import('./docs/backstage/project-framework.md')
+            }
+            ,
+            {
+                path: 'project-config',
+                meta: {
+                    title: '配置',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'project-config',
+                component: () => import('./docs/backstage/project-config.md')
+            }
+            ,
+            {
+                path: 'project-migrations',
+                meta: {
+                    title: '数据库迁移',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'project-migrations',
+                component: () => import('./docs/backstage/project-migrations.md')
+            }
+            ,
+            {
+                path: 'project-startup',
+                meta: {
+                    title: '启动项',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'project-startup',
+                component: () => import('./docs/backstage/project-startup.md')
+            }
+            ,
+            {
+                path: 'sample-entity',
+                meta: {
+                    title: '实体对象',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'sample-entity',
+                component: () => import('./docs/backstage/sample-entity.md')
+            }
+            ,
+            {
+                path: 'sample-view-model',
+                meta: {
+                    title: '数据传输对象',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'sample-view-model',
+                component: () => import('./docs/backstage/sample-view-model.md')
+            }
+            ,
+            {
+                path: 'sample-data-service',
+                meta: {
+                    title: '业务服务',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'sample-data-service',
+                component: () => import('./docs/backstage/sample-data-service.md')
+            }
+            ,
+            {
+                path: 'sample-rest-api',
+                meta: {
+                    title: 'API',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'sample-rest-api',
+                component: () => import('./docs/backstage/sample-rest-api.md')
+            }
+            ,
+            {
+                path: 'waiting',
+                meta: {
+                    title: 'API',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'waiting',
+                component: () => import('./docs/backstage/waiting.md')
+            }
+            ,
         ]
     },
     { path: '/', redirect: '/content/installation' },

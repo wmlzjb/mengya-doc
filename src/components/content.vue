@@ -205,9 +205,24 @@ export default {
             {
               groupName: "Basic",
               list: [
-                { title: "Layout 布局", path: "" },
-                { title: "Container 布局容器", path: "" },
-                { title: "Color 色彩", path: "" }
+                { title: "结构", path: "/project-framework" },
+                { title: "配置", path: "/project-config" },
+                { title: "数据库迁移", path: "/project-migrations" },
+                { title: "启动项", path: "/project-startup" },
+              ]
+            },
+            {
+              groupName: "Development",
+              list: [
+                
+                { title: "实体对象", path: "/sample-entity" },
+                { title: "数据传输对象", path: "/sample-view-model" },
+                { title: "业务服务", path: "/sample-data-service" },
+                { title: "API", path: "/sample-rest-api" },
+                { title: "//令牌授权", path: "/waiting" },
+                { title: "//权限和角色", path: "/waiting" },
+                { title: "//资源拦截器", path: "/waiting" },
+                { title: "//数据缓存", path: "/waiting" },
               ]
             }
           ]
