@@ -219,9 +219,8 @@ export default {
                 { title: "数据传输对象", path: "/sample-view-model" },
                 { title: "业务服务", path: "/sample-data-service" },
                 { title: "API", path: "/sample-rest-api" },
-                { title: "//令牌授权", path: "/waiting" },
-                { title: "//权限和角色", path: "/waiting" },
-                { title: "//资源拦截器", path: "/waiting" },
+                { title: "令牌授权", path: "/token-auth" },
+                { title: "角色和资源", path: "/permissions" },
                 { title: "//数据缓存", path: "/waiting" },
               ]
             }

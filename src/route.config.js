@@ -159,12 +159,34 @@ const routes = [
             {
                 path: 'waiting',
                 meta: {
-                    title: 'API',
+                    title: 'WAITING',
                     description: '',
                     lang: 'zh-CN'
                 },
                 name: 'waiting',
                 component: () => import('./docs/backstage/waiting.md')
+            }
+            ,
+            {
+                path: 'token-auth',
+                meta: {
+                    title: '令牌授权',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'token-auth',
+                component: () => import('./docs/backstage/token-auth.md')
+            }
+            ,
+            {
+                path: 'permissions',
+                meta: {
+                    title: '角色和资源',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'permissions',
+                component: () => import('./docs/backstage/permissions.md')
             }
             ,
         ]

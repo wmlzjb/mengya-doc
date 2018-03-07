@@ -5,7 +5,7 @@
 |--------------------|---------------------------------------|
 | Skyline.Infrastructure | 通用设施类，内含异常、拦截器、Linq扩展和各种Helper等类 |
 | Skyline.Infrastructure.Aliyun | 阿里云相关，与阿里云通信的SDK，内含核心模块和短信模块 |
-| Skyline.Infrastructure.IdentityServer3 | - |
+| Skyline.Infrastructure.IdentityServer3 | Token相关 |
 | Skyline.Infrastructure.WebApi | 通用WebApi设施类，内含SwaggerOAuth，Http请求异常处理等类 |
 
 ### 02. 业务服务
