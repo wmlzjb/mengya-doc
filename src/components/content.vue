@@ -192,6 +192,7 @@ export default {
             {
               groupName: "Development",
               list: [
+                { title: "路由", path: "/route" },
                 { title: "登录", path: "/login" },
                 { title: "拦截", path: "/interceptor" },
                 { title: "权限", path: "/role" }

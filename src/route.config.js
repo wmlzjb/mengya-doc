@@ -36,6 +36,16 @@ const routes = [
                 component: () => import('./docs/structure.md')
             },
             {
+                path: 'route',
+                meta: {
+                    title: '路由',
+                    description: '',
+                    lang: 'zh-CN'
+                },
+                name: 'component-route',
+                component: () => import('./docs/route.md')
+            },
+            {
                 path: 'login',
                 meta: {
                     title: '登录',
